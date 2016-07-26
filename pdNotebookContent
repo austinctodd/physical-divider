@@ -1,0 +1,12 @@
+from sys import path as sPath
+sPath.append("src")
+from physical_divider import visSim
+
+road = [0, 400]
+pDiv = [[50,150],[250,350]]
+binomialP = .95
+carCounts = (100, 300, 500)
+gpsSigmas = (5, 10, 15)
+convLen = 60
+convBinLen = .1
+visSim(road, pDiv, binomialP, carCounts, gpsSigmas, convBinLen, convLen)
